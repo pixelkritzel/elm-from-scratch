@@ -48,7 +48,7 @@ Nice! There are now two ways to play with this. One is `elm reactor`, the on-the
 If you want to publish your work on a webserver though, you need some way to create a javascript file from your Elm code that you can include in your html file or include with a server side programming language. In this case, you want to use `elm make` to create a javascript file with a given name, like so:
 
 ```bash
-elm make Main.elm -o MovieSearch.js
+elm-make Main.elm --output MovieSearch.js
 ```
 
 It should work and generate a MovieSearch.js file for you. Now, create a file called  MovieSearch.html and paste the following barebones HTML content in there that references our generated javascript file:
