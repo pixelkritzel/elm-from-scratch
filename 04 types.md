@@ -134,10 +134,10 @@ calculateYearsBetweenReleases movie1 movie2 =
 
 -- This is a contrived example to show how to create new values
 -- based on existing ones.
-createDummyDocumentary : Movie -> Movie
+createDummyDocumentary : String -> Movie
 createDummyDocumentary movie =
 	{ movie
-  | title = movie ++ " - a Documentary"
+  | title = movie.title ++ " - a Documentary"
   , yearOfRelease = 2016
   }
 
